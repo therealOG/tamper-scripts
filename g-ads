@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name         Stop g ads
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  be gone
+// @author       One drunk boi
+// @match        https://www.google.de/*
+// @grant        none
+// ==/UserScript==
+// @require http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+
+document.querySelectorAll('[id=sadsfs]').forEach(elem => {
+    elem.style.display ='none';
+});
+
+setInterval(function(){
+    document.querySelectorAll('[id=sadsfs]').forEach(elem => {
+        elem.style.display ='none';
+    });
+}, 1000);
